@@ -22,7 +22,7 @@ uefi.elf
 
 Now click on `flash.cmd` file and enter the `9008` COM port (just the number). Let's wait until module is flashed, when complete the module will be rebooted.
 
-If everything was fine, your module should appear in the **Device Manager** in `3 TTY MODE` (Modem Port, Diagnostic Port, NMEA Port) like this screen:
+If everything was fine, your module should appear in the **Device Manager** in `3 TTY` mode (Modem Port, Diagnostic Port, NMEA Port) like this screen:
 
 <img src="asset/modem_after_first_restore.png" alt="COM state after first restore" width="auto" height="auto">
 
@@ -40,7 +40,7 @@ After module is back online, run `EFS Explorer` and copy `config` file into EFS 
 
 <img src="asset/efs_explorer_restore_config.png" alt="Back to 4.." width="auto" height="auto">
 
-Open TeraTerm (or another terminal emulator) and connect to `NMEA` port, then run these commands to put modem back to `4 TTY + QMI` mode:
+Open TeraTerm and connect to `NMEA` port, then run these commands to put modem back to `4 TTY + QMI` mode:
 
 <img src="asset/teraterm_at_configuration.png" alt="Back to 4.." width="auto" height="auto">
 
@@ -53,9 +53,9 @@ AT+CFUN=1,1
 
 <img src="asset/teraterm_at_commands.png" alt="Back to 4.." width="auto" height="auto">
 
-Last reboot and in less than two minutes module should be back in `4 TTY + QMI`. From now you can access it again with `adb`
+Last reboot and in less than two minutes module should be back in `4 TTY + QMI` mode. From now you can access it again with `adb`
 
-Check if `config` and IMEI were written correctly launching again TeraTerm (or another terminal emulator), connect to `NMEA` port and issue `ATI` command:
+Check if `config` and IMEI were written correctly launching again TeraTerm, connect to `NMEA` port and issue `ATI` command:
 
 <img src="asset/teraterm_ati.png" alt="Restored :-)" width="auto" height="auto">
 
