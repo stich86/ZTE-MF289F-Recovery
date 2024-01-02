@@ -42,7 +42,7 @@ The most important partitions that usually need to be swapped between different 
 | **uefi**       | Contains the [RexOS](https://en.wikipedia.org/wiki/REX_OS) system that is loaded by the baseband. It will read all DSP firmwares from the modem partition (AKA NON-HLOS) to initialize all radio stuff.                 |
 | **modem**      | Contains all DSP firmwares loaded by UEFI.                                                                                                                                                                              |
 | **boot**       | It's the Linux Kernel used by the AP processor to load embedded drivers and start everything from Root FS                                                                                                               |
-| **zterw**      | It's used by Root FS to store all settings that should be persistent across reboots. When you factory reset the CPE, by using either the physical or WebUI button, the volumes inside this ***UBI*** will be formatted. |
+| **zterw**      | It's used by Root FS to store all settings that should be persistent across reboots. When you factory reset the module, by using either the physical or WebUI button, the volumes inside this ***UBI*** will be formatted. |
 | **system**     | It's the Linux Root FS where all binaries are stored and ran at boot after kernel startup.                                                                                                                              |
 
 **system** & **modem** partitions are created using ***UBIFS*** on top of an ***UBI*** image layout. Both can be accessed in read-write using ADB, so changes on the filesystem are possible.
