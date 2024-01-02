@@ -5,6 +5,8 @@ In case of soft bricked unit (usually ZTE device with VID/PID *19d2:0076*) or fu
 Here is an image of internal module, the **EDL BOOT POINTS** are the two one with the red arrows
 
 <img src="asset/MF289F_EDL_point.jpg" alt="EDL Boot Point" width="300" height="auto">
+Special thanks to user checkin665 from eko.pl forum
+
 
 ##
 Use a paperclip or tweezer to short these two points, keep them shorted and attach the module to the USB.
