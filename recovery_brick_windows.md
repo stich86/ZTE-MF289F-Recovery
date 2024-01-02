@@ -22,7 +22,7 @@ uefi.elf
 
 Now click on `flash.cmd` file and enter the `9008` COM port (just the number). Let's wait until module is flashed, when complete the module will be rebooted.
 
-If everything was fine, your module should appear in the **Device Manager** with `3 TTY MODE` (Modem Port, Diagnostic Port, NMEA Port) like this screen:
+If everything was fine, your module should appear in the **Device Manager** in `3 TTY MODE` (Modem Port, Diagnostic Port, NMEA Port) like this screen:
 
 <img src="asset/modem_after_first_restore.png" alt="COM state after first restore" width="auto" height="auto">
 
