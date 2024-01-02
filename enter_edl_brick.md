@@ -2,7 +2,7 @@
 
 In case of soft bricked unit (usually ZTE device with VID/PID *19d2:0076*) or fully bricked (no sign of life), there is another way to enter the module into ***EDL Mode***.
 
-Here is an image of internal module, the **EDL BOOT POINTS** are the two one with the arrows (red one)
+Here is an image of internal module, the **EDL BOOT POINTS** are the two one with the red arrows
 
 <img src="asset/MF289F_EDL_point.jpg" alt="EDL Boot Point" width="300" height="auto">
 
@@ -19,4 +19,4 @@ You should see into *Device Manager* (Windows) or `lsusb` (Linux) a device in **
   Bus 004 Device 032: ID 05c6:9008 Qualcomm, Inc. Gobi Wireless Modem (QDL mode)
 ```
   
-Remove remove the paperclip/tweezer and use **QFIL** or **edl** to flash firmware back into the module.
+Remove the paperclip/tweezer and use **QFIL** or **edl** to flash firmware back into the module.
