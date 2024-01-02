@@ -56,4 +56,4 @@ The most important partitions that usually need to be swapped between different 
 
 These two volumes can be extracted using [ubireader](https://github.com/onekey-sec/ubi_reader).
 
-If you want to dig on it, please refer to [my ZTE MC7010 istruction](https://github.com/stich86/ZTE-MC7010/blob/main/fs.md) on how to repack sysfs 
+If you want to dig on it, please refer to [my ZTE MC7010 instructions](https://github.com/stich86/ZTE-MC7010/blob/main/fs.md) on how to repack sysfs and modem
