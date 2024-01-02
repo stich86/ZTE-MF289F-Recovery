@@ -5,7 +5,7 @@ In case of soft bricked unit (usually ZTE device with VID/PID *19d2:0076*) or fu
 Here is an image of internal module, the **EDL BOOT POINTS** are the two one with the red arrows
 
 <img src="asset/MF289F_EDL_point.jpg" alt="EDL Boot Point" width="300" height="auto">
-Special thanks to user checkin665 from eko.pl forum
+<sup>Special thanks to user checkin665 from eko.pl forum</sup>
 
 
 ##
