@@ -1,4 +1,4 @@
-# Recovery module from and hard or soft-brick (Windows only)
+# Recovery module from an hard brick (Windows only)
 
 Before starting, be sure to have your module in ***EDL*** mode. If it cannot be enter it using `adb`, follow instruction to use the [short points](https://github.com/stich86/ZTE-MF289F-Recovery/blob/main/enter_edl_brick.md)
 ⚠️ Download and install [these](https://mega.nz/folder/C1w1WLTa#46TCvg4-rq123fTFxEEbdg) drivers, [QPST](https://qpsttool.com/qpst-tool-v2-7-496) and [TeraTerm](https://github.com/TeraTermProject/teraterm/releases/tag/v5.1) before connect the module to your pc ⚠️ 
