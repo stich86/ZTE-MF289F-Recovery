@@ -14,7 +14,7 @@ The [MF289F](https://ztedevices.com/en-gl/mf289f/) router is a 4G indor unit pro
 
 # Useful Stuff
 
-- [Software Revision](swrev.md)
+- [Software Revision](swver.md)
 - [Partition & Filesystem Info](fs.md)
 - [LTE Combos](cacombo.md)
 - [Play with EDL tools and partitions](edl.md)
