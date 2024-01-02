@@ -200,4 +200,4 @@ edl e boot --memory=NAND --loader=/path/to/prog_firehose.mbn
 edl reset --resetmode=reset --loader=/path/to/prog_firehose.mbn
 ```
 
-After you have erased ***boot*** partition, you can erase and write partitions with ***fastboot** and avoid rewriting **SBL1** each time.
+After you have erased ***boot*** partition, you can erase and write partitions with **fastboot** and avoid rewriting **SBL1** each time.
