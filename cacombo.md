@@ -1,5 +1,5 @@
 # LTE CA Combo
-Here is a list of links to the most common firmwares' LTE/NR CA Combos:
+Here is a list of links to the most common firmware's LTE Combos:
 
 ## LTE
 | Device   | Firmware           | LTE CAP                                                                               |
