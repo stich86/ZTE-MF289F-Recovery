@@ -9,7 +9,6 @@ The [MF289F](https://ztedevices.com/en-gl/mf289f/) router is a 4G indoor unit pr
 - NAND: 512MB
 - 4G LTE Cat: 20 downlink & 13 uplink
 - 4G LTE Speed: 2Gbit downlink & 316Mbit uplink
-- Network connectivity: 2x1GbE interface
 - Connectivity:
     - USB over MiniPCIe Header, runs two modes, one normal with QMI+DIAG+ADB+NMEA and one with just DIAG+NMEA+AT. You need an adapter to flash it on your PC like [this](https://www.amazon.it/wireless-scheda-adattatore-modulo-testing/dp/B00YAOL4NE/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JRM39EDJSU8Z&keywords=mini+pcie+to+usb+sim&qid=1704221380&sprefix=minipcie+to+usb+sim%2Caps%2C105&sr=8-3)
 
