@@ -3,6 +3,7 @@
 
 ## ⚠️ READ CAREFULLY! ⚠️
 ##  The files you are downloading are not under my control. You accept the risk of using them. If your device or module were to break or even catch fire, I do not hold any responsibility in any way. Therefore, proceed at your own risk!
+## At current date (3/1/2024), swapping firmware on the module will break LEDs and RJ-11 ports, so accept the risk!
 
 ⚠️ Download and install [these](https://mega.nz/folder/C1w1WLTa#46TCvg4-rq123fTFxEEbdg) drivers, [QPST](https://qpsttool.com/qpst-tool-v2-7-496) and [TeraTerm](https://github.com/TeraTermProject/teraterm/releases/tag/v5.1) before connect the module to your pc. 
 Be sure to have your module in ***EDL Mode*** before go ahead. 
