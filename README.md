@@ -25,6 +25,7 @@ The [MF289F](https://ztedevices.com/en-gl/mf289f/) router is a 4G indoor unit pr
 - [Play with EDL tools and partitions](edl.md)
 - [Enter 'Emergency Download Mode' (EDL) if your module is bricked](enter_edl_brick.md)
 - [Recovery module that is hard-bricked - WINDOWS ONLY](recovery_brick_windows.md)
+- [Swap Firmware on the module](swap_firmware.md)
 
 ⚠️ Certain links in this repo will lead to other repositories which are not under my control.
 You accept that I have no control over and accepts no liability in respect of materials, products or services available externally of this repo. ⚠️
