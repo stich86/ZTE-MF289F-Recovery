@@ -2,7 +2,7 @@
 
 ## ⚠️ **READ CAREFULLY!** ⚠️
 ## The files you are downloading are not under my control. You accept the risk of using them. If your device or module were to break or even catch fire, I do not hold any responsibility in any way. Therefore, proceed at your own risk!
-## At current date (3/1/2024), swapping firmware on the module will break LEDs and RJ-11 ports, so accept the risk!
+## At current date (3/1/2024), swapping firmware on the module will break LEDs and RJ-11 port, so accept the risk!
 
 ⚠️ Make sure to have a good backup of your QCN before proceeding! ⚠️
 
