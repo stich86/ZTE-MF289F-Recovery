@@ -55,6 +55,23 @@ AT+CFUN=1,1
 
 Last reboot and in less than two minutes module should be back in `4 TTY + QMI` mode. From now you can access it again with `adb`
 
+In case you don't get device automatically recognized, just select these one and install relative drivers using option "Let me pick from a list of device drivers on my computer", select "All Devices" and the "Ports (COM & LTP)" (Keep attention on instance path):
+
+<img src="asset/zte_before_flash_select_driver_1.png" alt="Back to 4.." width="auto" height="auto">
+<img src="asset/zte_before_flash_select_driver_2.png" alt="Back to 4.." width="auto" height="auto">
+<img src="asset/zte_before_flash_select_driver_3.png" alt="Back to 4.." width="auto" height="auto">
+<img src="asset/zte_before_flash_select_driver_4.png" alt="Back to 4.." width="auto" height="auto">
+
+**DIAG PORT** (instance 0000)
+
+<img src="asset/zte_after_flash_DIAG_port_driver_1.png" alt="Back to 4.." width="auto" height="auto">
+<img src="asset/zte_after_flash_DIAG_port_driver_2.png" alt="Back to 4.." width="auto" height="auto">
+
+**NMEA PORT** (instance 0001)
+
+<img src="asset/zte_after_flash_NMEA_port_driver_1.png" alt="Back to 4.." width="auto" height="auto">
+<img src="asset/zte_after_flash_NMEA_port_driver_2.png" alt="Back to 4.." width="auto" height="auto">
+
 Check if `config` and IMEI were written correctly launching again TeraTerm, connect to `NMEA` port and issue `ATI` command:
 
 <img src="asset/teraterm_ati.png" alt="Restored :-)" width="auto" height="auto">
