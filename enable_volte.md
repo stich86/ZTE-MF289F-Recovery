@@ -67,5 +67,5 @@ Here is a recap table with all the tests conducted by me and other individuals u
 
 
 <sup>⁽¹⁾ Working OOB</sup><br>
-<sup>⁽²⁾ You need to implement this working procedure to make enable VoLTE</sup><br>
+<sup>⁽²⁾ You need to implement this working procedure to enable VoLTE</sup><br>
 <sup>⁽³⁾ They don't support VoLTE, and the 2G fall-back isn't working either</sup>
