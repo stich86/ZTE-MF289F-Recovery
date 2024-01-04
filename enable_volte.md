@@ -1,4 +1,4 @@
-# Enable VoLTE on not-supported Provider
+# Enable VoLTE for a Provider that is not supported
 
 You can enable VoLTE (Voice Over LTE) on this module for unsupported providers OOB by adding certain files to the EFS and ensuring the execution of specific AT commands
 
