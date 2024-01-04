@@ -18,7 +18,7 @@ AT$QCPDPIMSCFGE=2,1
 AT$QCPDPIMSCFGE=3,1
 ```
 
-Verify that APNs and IMS configuration was really applied with these commands (and relative output):
+Verify that the APN and IMS configurations have been successfully applied by executing the following commands and checking the corresponding output:
 
 **APN**
 ```
@@ -42,7 +42,7 @@ OK
 
 Restart module with the usual AT command `AT+CFUN=1,1`
 
-When module is back online, open again TeraTerm to `NMEA` port and check if `IMS APN` is connected and has an assigned IP with this command:
+When the module is back online, reopen TeraTerm on the `NMEA` port and check if the `IMS APN` is connected and has an assigned IP using the following command:
 
 ```
 AT+CGCONTRDP
@@ -51,16 +51,21 @@ AT+CGCONTRDP
 OK
 ```
 
-Now you can try make/receive call and check if the modem is still in 4G using usual OpenWRT tools (like amazing [3ginfo-lite](https://github.com/4IceG/luci-app-3ginfo-lite) from @4IceG)
+Now you can try make/receive call and check if the modem is still in 4G using the usual OpenWRT tools such as the excellent [3ginfo-lite](https://github.com/4IceG/luci-app-3ginfo-lite) by @4IceG
 
-Here is a recap table with all tests made by me and other guys using this mode. If you got success with other ISP, feel free to open an PR and add it:
+Here is a recap table with all the tests conducted by me and other individuals using this mode. If you achieve success with another ISP, please feel free to open a pull request (PR) and add it:
 
-| ISP                             | VoLTE Working                                                 | SW Version                                                                       |
-|---------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------------------|
-| TIM (IT) and relative MVNO      | ✅ (OOB)                                                       | VDF_IT_MF289FMODV1.0.0B07  VDF_DE_MF289F1MODV1.0.0B05                            |
-| Vodafone (IT) and relative MVNO | ✅ (needs this mod)                                            | VDF_IT_MF289FMODV1.0.0B07  VDF_DE_MF289F1MODV1.0.0B05 TMO_PL_MF289F1MODV1.0.0B03 |
-| Wind (IT) and relative MVNO     | ✅ (needs this mod)                                            | VDF_IT_MF289FMODV1.0.0B07  VDF_DE_MF289F1MODV1.0.0B05 TMO_PL_MF289F1MODV1.0.0B03 |
-| Iliad (IT)                      | ❌ (They don't support VoLTE, also 2G fall-back isn't working) | VDF_IT_MF289FMODV1.0.0B07  VDF_DE_MF289F1MODV1.0.0B05 TMO_PL_MF289F1MODV1.0.0B03 |
-| Plus (PL)                       | ✅ (needs this mod)                                            | VDF_DE_MF289F1MODV1.0.0B05                                                       |
-| Play (PL)                       | ✅ (needs this mod)                                            | VDF_DE_MF289F1MODV1.0.0B05                                                       |
-| T-Mobile (PL)                   | ✅ (needs this mod)                                            | VDF_DE_MF289F1MODV1.0.0B05                                                       |
+| ISP                             | VoLTE Working        | SW Version                                                                       |
+|---------------------------------|--------------------- |----------------------------------------------------------------------------------|
+| TIM (IT) and relative MVNO      | ✅ ⁽¹⁾               | VDF_IT_MF289FMODV1.0.0B07<br>VDF_DE_MF289F1MODV1.0.0B05                            |
+| Vodafone (IT) and relative MVNO | ✅ ⁽²⁾               | VDF_IT_MF289FMODV1.0.0B07<br>VDF_DE_MF289F1MODV1.0.0B05<br>TMO_PL_MF289F1MODV1.0.0B03 |
+| Wind (IT) and relative MVNO     | ✅ ⁽²⁾               | VDF_IT_MF289FMODV1.0.0B07<br>VDF_DE_MF289F1MODV1.0.0B05<br>TMO_PL_MF289F1MODV1.0.0B03 |
+| Iliad (IT)                      | ❌ ⁽³⁾               | VDF_IT_MF289FMODV1.0.0B07<br>VDF_DE_MF289F1MODV1.0.0B05<br>TMO_PL_MF289F1MODV1.0.0B03 |
+| Plus (PL)                       | ✅ ⁽²⁾               | VDF_DE_MF289F1MODV1.0.0B05                                                       |
+| Play (PL)                       | ✅ ⁽²⁾               | VDF_DE_MF289F1MODV1.0.0B05                                                       |
+| T-Mobile (PL)                   | ✅ ⁽²⁾               | VDF_DE_MF289F1MODV1.0.0B05                                                       |
+
+
+<sup>⁽¹⁾ Working OOB</sup><br>
+<sup>⁽²⁾ You need to implement this working procedure to make enable VoLTE</sup><br>
+<sup>⁽³⁾ They don't support VoLTE, and the 2G fall-back isn't working either</sup>
