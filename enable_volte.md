@@ -53,7 +53,7 @@ OK
 
 Now you can try make/receive call and check if the modem is still in 4G using the usual OpenWRT tools such as the excellent [3ginfo-lite](https://github.com/4IceG/luci-app-3ginfo-lite) by @4IceG
 
-Here is a recap table with all the tests conducted by me and other individuals using this mode. If you achieve success with another ISP, please feel free to open a pull request (PR) and add it:
+Here is a recap table with all the tests conducted by me and other individuals using this module. If you achieve success with another ISP, please feel free to open a pull request (PR) and add it:
 
 | ISP                             | VoLTE Working        | SW Version                                                                       |
 |---------------------------------|--------------------- |----------------------------------------------------------------------------------|
