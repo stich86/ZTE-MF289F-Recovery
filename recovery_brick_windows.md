@@ -26,6 +26,8 @@ If everything was fine, your module should appear in the **Device Manager** in `
 
 <img src="asset/modem_after_first_restore.png" alt="COM state after first restore" width="auto" height="auto">
 
+## Restore module configuration (EFS and NV items)
+
 Now it's time to restore EFS partition using the `dummy_IMEI_vfde.qcn` file. This QCN contains **zeroed IMEI**, please refer to [EFS Professional](https://xdaforums.com/t/tool-updated-29-12-14-efs-professional-v2-1-80b-also-for-non-samsung-devices.1308546/) on how to load and modify it, I will not give you instructions on how to do, sorry :-)
 
 When your QCN is filled with your own IMEI, launch `Software Download` program, click on `Restore` tab, load your QCN (select `QCN NV Memory Files` and not XML one) and restore it. When process termiante, the module will be rebooted.
