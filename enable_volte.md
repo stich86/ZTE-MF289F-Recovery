@@ -2,8 +2,23 @@
 
 You can enable VoLTE (Voice Over LTE) on this module for unsupported providers OOB by adding certain files to the EFS and ensuring the execution of specific AT commands
 
-Prerequisites: This has been tested only with the `dummy_IMEI_vfde.qcn` QCN file and the **T-Mobile\Vodafone DE AT.2** `config` file, which enables the `RJ-11` port even when in `VOICE` mode. Therefore, before starting, you need to erase your EFS and follow all the necessary steps, as outlined in the [recovery guide](https://github.com/stich86/ZTE-MF289F-Recovery/blob/main/recovery_brick_windows.md#restore-module-configuration-efs-and-nv-items))
+Prerequisites: This has been tested only with the `dummy_IMEI_vfde.qcn` QCN file and the **T-Mobile\Vodafone DE AT.2** `config` file, which enables the `RJ-11` port even when in `VOICE` mode. Therefore, before starting, you need to erase your EFS and follow all the necessary steps, as outlined in the [recovery guide](https://github.com/stich86/ZTE-MF289F-Recovery/blob/main/recovery_brick_windows.md#restore-module-configuration-efs-and-nv-items)) and check if your SIM card has VoLTE enabled (ask your telco provider
 
+If the module is in `VOIP` mode, just change it issuing these commands over `adb` session:
+
+```
+adb shell
+cfg set voice_work_type=VOICE
+cfg save
+```
+
+If it reverts back to `VOIP` mode after a reboot, update `custom_parameter` using these commands:
+
+```
+adb shell
+mount -o remount,rw /usr/zte_web
+sed -i 's/VOIP/VOICE/g' /usr/zte_web/web/copy/custom_parameter
+```
 
 Once you have successfully uploaded the EFS configuration, attach the module to Windows and open `EFS Explorer`. Copy the contents of the [`data_efs_per_VoLTE` folder](https://github.com/stich86/ZTE-MF289F-Recovery/tree/main/data_efs_per_VoLTE) folder into the `/data` folder of EFS
 
