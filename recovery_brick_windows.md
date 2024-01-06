@@ -59,6 +59,8 @@ Last reboot and in less than two minutes module should be back in `4 TTY + QMI` 
 
 In case you don't get device automatically recognized, just select these one and install relative drivers using option **"Let me pick from a list of available device drivers on my computer"**, select **"All Devices"** and the **"Ports (COM & LPT)"** (Keep attention on instance path!):
 
+## ⚠️ This composition is for VF-DE Firmware ⚠️
+
 <img src="asset/zte_before_flash_select_driver_1.png" alt="Back to 4.." width="auto" height="auto">
 <img src="asset/zte_before_flash_select_driver_2.png" alt="Back to 4.." width="auto" height="auto">
 <img src="asset/zte_before_flash_select_driver_3.png" alt="Back to 4.." width="auto" height="auto">
