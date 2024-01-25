@@ -2,10 +2,10 @@
 
 | SW Revision                                      | HW Revision | Description                                                                                                                              | Support VoLTE |
 |--------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| VDF_IT_MF289FMODV1.0.0B07 (Build Date: 2021-07-16) | A.T1        | The first hardware version sold in Italy, supporting both VoLTE/VoIP by changing parameters inside the module.                         | ✅            |
+| VDF_IT_MF289FMODV1.0.0B07 (Build Date: 2021-07-16) | A.T1        | The first hardware version sold in Italy, supporting both VoLTE/VoIP by changing parameters inside the module and into `EFS` partition.  | ❌ (Not OOB)            |
 | VDF_IT_MF289F1MODV1.0.0B02 (Build Date: 2021-07-16) | A.T2        | The second hardware version sold in Italy, supporting only VoIP. It requires changing the `config` to enable the RJ-11 port when in `VOICE` mode. | ❌ (Not OOB) |
-| VDF_DE_MF289F1MODV1.0.0B05 (Build Date: 2022-05-11) | A.T2        | The only known hardware revision sold as "GigaCube" in Germany. It supports VoLTE/VoIP by changing parameters inside the modules and also supports B20 aggregation. | ✅  |
-| TMO_PL_MF289F1MODV1.0.0B03 (Build Date: 2021-10-14) | A.T2        | The only known hardware revision sold in Poland, supporting both VoLTE/VoIP by changing parameters inside the module and into `EFS` partition. | ✅   |
+| VDF_DE_MF289F1MODV1.0.0B05 (Build Date: 2022-05-11) | A.T2        | The only known hardware revision sold as "GigaCube" in Germany. It supports VoLTE/VoIP by changing parameters inside the modules and also supports B20 aggregation OOB. | ✅  |
+| TMO_PL_MF289F1MODV1.0.0B03 (Build Date: 2021-10-14) | A.T2        | The only known hardware revision sold in Poland, supporting both VoLTE/VoIP by changing parameters inside the module and into `EFS` partition. | ❌ (Not OOB)   |
 | DNA_FI_MF289F1MODV1.0.0B11 (Build Date: 2022-05-25) | A.T2        | The only known hardware revision sold in Finland by DNA, voice seems disabled on EFS                                                  | ❌ (Not OOB)  |
 
 
