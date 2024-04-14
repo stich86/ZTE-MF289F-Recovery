@@ -79,6 +79,7 @@ Here is a recap table with all the tests conducted by me and other individuals u
 | Plus (PL)                       | ✅ ⁽²⁾               | VDF_DE_MF289F1MODV1.0.0B05                                                       |
 | Play (PL)                       | ✅ ⁽²⁾               | VDF_DE_MF289F1MODV1.0.0B05                                                       |
 | T-Mobile (PL)                   | ✅ ⁽²⁾               | VDF_DE_MF289F1MODV1.0.0B05                                                       |
+| Cosmote (GR)                    | ✅ ⁽²⁾               | VDF_IT_MF289FV1.0.0B07                                                       |
 
 
 <sup>⁽¹⁾ Working OOB</sup><br>
