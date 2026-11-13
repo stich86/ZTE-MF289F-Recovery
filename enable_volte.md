@@ -4,25 +4,27 @@ You can enable VoLTE (Voice Over LTE) on this module for unsupported providers O
 
 Prerequisites: This has been tested only with the `dummy_IMEI_vfde.qcn` QCN file and the **T-Mobile\Vodafone DE AT.2** `config` file, which enables the `RJ-11` port even when in `VOICE` mode. Therefore, before starting, you need to erase your EFS and follow all the necessary steps, as outlined in the [recovery guide](https://github.com/stich86/ZTE-MF289F-Recovery/blob/main/recovery_brick_windows.md#restore-module-configuration-efs-and-nv-items)) and check if your SIM card has VoLTE enabled (ask your telco provider
 
-If the module is in `VOIP` mode, just change it issuing these commands over `adb` session:
+If the module is in `VOIP` mode, just change it issuing these commands over `adb` session and reboot it:
 
 ```
 adb shell
 cfg set voice_work_type=VOICE
 cfg save
+reboot
 ```
 
-If it reverts back to `VOIP` mode after a reboot, update `custom_parameter` using these commands:
+If it reverts back to `VOIP` mode after a reboot, update `custom_parameter` using these commands **(these commands should be executed only if you are running Vodafone IT\T-Mobile PL or DNA firmware, Vodafone DE doesn't have this file)**:
 
 ```
 adb shell
 mount -o remount,rw /usr/zte_web
 sed -i 's/VOIP/VOICE/g' /usr/zte_web/web/copy/custom_parameter
+reboot
 ```
 
 Once you have successfully uploaded the EFS configuration, attach the module to Windows and open `EFS Explorer`. Copy the contents of the [`data_efs_per_VoLTE` folder](https://github.com/stich86/ZTE-MF289F-Recovery/tree/main/data_efs_per_VoLTE) folder into the `/data` folder of EFS
 
---- PUT IMAGE ---
+**Be sure to have a SIM card (that support VoLTE) installed, otherwise some commands will give you errors**
 
 Open TeraTerm and connect to `NMEA` port, then run these commands:
 
